@@ -1,0 +1,6 @@
+%%WWWDIR%%/define.php
+%%WWWDIR%%/index.php
+%%WWWDIR%%/swfimage.php
+%%WWWDIR%%/swfimagelist.php
+%%WWWDIR%%/swfimagereplace.php
+@dirrm %%WWWDIR%%
