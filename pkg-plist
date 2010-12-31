@@ -4,3 +4,4 @@
 %%WWWDIR%%/swfimagelist.php
 %%WWWDIR%%/swfimagereplace.php
 @dirrm %%WWWDIR%%
+@exec chown -R %%WWWOWN%%:%%WWWGRP%% %D/%%WWWDIR%%

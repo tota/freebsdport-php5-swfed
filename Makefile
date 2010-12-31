@@ -6,32 +6,32 @@
 #
 
 PORTNAME=	swfed
-PORTVERSION=	0.27
+PORTVERSION=	0.28
 CATEGORIES=	graphics
 MASTER_SITES=	SFJP
-MASTER_SITE_SUBDIR=	${PORTNAME}/49995
+MASTER_SITE_SUBDIR=	${PORTNAME}/50400
 PKGNAMEPREFIX=	php5-
 
-MAINTAINER=	tota@FreeBSD.org
+MAINTAINER=	yoya@awm.jp
 COMMENT=	A PHP extension to edit SWF file
 
 BUILD_DEPENDS=	re2c:${PORTSDIR}/devel/re2c
 
-OPTIONS=	GIF	"With gif image support" on \
-		PNG	"With png image support" on
-
 DEFAULT_PHP_VER=	5
 IGNORE_WITH_PHP=	4
-
 USE_PHP=	zlib
 USE_PHPEXT=	yes
 
-CONFIGURE_ARGS=	--with-zlib-dir=yes
-
 WRKSRC=	${WRKDIR}/${DISTNAME}/src
+CONFIGURE_ARGS=	--with-zlib-dir=yes
 
 PORTDOCS=	readme.txt
 PORTEXAMPLES=	*
+
+PLIST_SUB=	WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}
+
+OPTIONS=	GIF	"With gif image support" on \
+		PNG	"With png image support" on
 
 .include <bsd.port.pre.mk>
 
