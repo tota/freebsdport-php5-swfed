@@ -2,7 +2,7 @@
 # Date created:		2010-06-13
 # Whom:			TAKATSU Tomonari <tota@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/php5-swfed/Makefile,v 1.1 2010/12/31 16:54:30 tota Exp $
 #
 
 PORTNAME=	swfed
